@@ -7,6 +7,10 @@
        url('../fonts/cocogoose/cocogoose_trial-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
   }
 
+.cocogoose {
+  font-family: 'cocogoose', helvetica, arial, sans serif;
+}
+
 h1,
 h2,
 h3,
@@ -16,10 +20,34 @@ h6 {
   font-family: 'cocogoose', helvetica, arial, sans serif;
 }
 
-.cocogoose {
-  font-family: 'cocogoose', helvetica, arial, sans serif;
+.centered{
+  text-align: center;
 }
 
+//color
+.black {
+  color: $black;
+}
+
+.dk-gray{
+  color: $dk-gray;
+}
+
+.gray{
+  color: $gray;
+}
+
+.lt-gray{
+  color: $lt-gray;
+}
+
+
+
+//sizing
 .large {
   font-size: 1.5em;
+}
+
+.extra-large {
+  font-size: 6em;
 }

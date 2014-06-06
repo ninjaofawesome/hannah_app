@@ -5,8 +5,9 @@
 .navlink {
   display: inline;
   list-style: none;
+  color: $gray;
     a {
-      color: $dk-gray;
+      color: $gray;
       padding: 0 10px;
       margin: 0 5px;
       &:hover{
@@ -24,7 +25,7 @@
       a {
       color: $dk-gray;
       &:hover{
-        color: $lt-gray;
+        color: $gray;
         text-decoration: none;
       }
     }

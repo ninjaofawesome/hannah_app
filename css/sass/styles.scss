@@ -1,8 +1,9 @@
-// customize bootstrap variables here:
+// Boostrap and stuff needed all over
 @import "core/variables";
 @import "core/mixins";
 @import "bootstrap";
 @import "core/type";
+@import "core/spacing";
 
 //Structure
 @import "structure/navbar";

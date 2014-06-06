@@ -366,8 +366,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/stylesheets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("/stylesheets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/stylesheets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/stylesheets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/stylesheets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("/css/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("/css/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/css/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/css/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/css/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 /* line 25, ../../../../../.rvm/gems/ruby-2.1.1/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_glyphicons.scss */
@@ -7899,7 +7899,12 @@ button.close {
   /* Legacy iOS */
 }
 
-/* line 15, ../sass/core/_type.scss */
+/* line 10, ../sass/core/_type.scss */
+.cocogoose {
+  font-family: 'cocogoose', helvetica, arial, sans serif;
+}
+
+/* line 19, ../sass/core/_type.scss */
 h1,
 h2,
 h3,
@@ -7909,14 +7914,49 @@ h6 {
   font-family: 'cocogoose', helvetica, arial, sans serif;
 }
 
-/* line 19, ../sass/core/_type.scss */
-.cocogoose {
-  font-family: 'cocogoose', helvetica, arial, sans serif;
+/* line 23, ../sass/core/_type.scss */
+.centered {
+  text-align: center;
 }
 
-/* line 23, ../sass/core/_type.scss */
+/* line 28, ../sass/core/_type.scss */
+.black {
+  color: black;
+}
+
+/* line 32, ../sass/core/_type.scss */
+.dk-gray {
+  color: #333333;
+}
+
+/* line 36, ../sass/core/_type.scss */
+.gray {
+  color: #666666;
+}
+
+/* line 40, ../sass/core/_type.scss */
+.lt-gray {
+  color: #999999;
+}
+
+/* line 47, ../sass/core/_type.scss */
 .large {
   font-size: 1.5em;
+}
+
+/* line 51, ../sass/core/_type.scss */
+.extra-large {
+  font-size: 6em;
+}
+
+/* line 1, ../sass/core/_spacing.scss */
+.left-margin {
+  margin-left: 5%;
+}
+
+/* line 5, ../sass/core/_spacing.scss */
+.wideline {
+  line-height: 1.5em;
 }
 
 /* line 1, ../sass/structure/_navbar.scss */
@@ -7928,32 +7968,33 @@ h6 {
 .navlink {
   display: inline;
   list-style: none;
+  color: #666666;
 }
-/* line 8, ../sass/structure/_navbar.scss */
+/* line 9, ../sass/structure/_navbar.scss */
 .navlink a {
-  color: #333333;
+  color: #666666;
   padding: 0 10px;
   margin: 0 5px;
 }
-/* line 12, ../sass/structure/_navbar.scss */
+/* line 13, ../sass/structure/_navbar.scss */
 .navlink a:hover {
   color: #999999;
   text-decoration: none;
 }
 
-/* line 19, ../sass/structure/_navbar.scss */
+/* line 20, ../sass/structure/_navbar.scss */
 .brand {
   display: inline;
   list-style: none;
   margin: 0 5px 0 0;
   padding-left: 0 10px 0 0;
 }
-/* line 24, ../sass/structure/_navbar.scss */
+/* line 25, ../sass/structure/_navbar.scss */
 .brand a {
   color: #333333;
 }
-/* line 26, ../sass/structure/_navbar.scss */
+/* line 27, ../sass/structure/_navbar.scss */
 .brand a:hover {
-  color: #999999;
+  color: #666666;
   text-decoration: none;
 }
