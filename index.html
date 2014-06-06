@@ -58,17 +58,21 @@
 
 </script>
 
-<script type="text/x-handlebars" id="about">
+<script type="text/x-handlebars" data-template-name="my_layout">
+  {{yield}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="about">
   <div class="row">
     <div class="col-md-3">
       <img src="img/beards.jpeg" style= "width: 325px;" alt="Hannah" />
     </div>
     <div class="col-md-8 col-md-offset-1">
-     <h1>The Portrait Of An Artist As A Young Lady</h1>
-     <p>Hannah was born on the banks of the Columbia River in a tiny hamlet called Richland in the great state of Washington.  It is rumored that when Hannah was born, she was such an angelically beautiful child that her parents decided that they had achieved perfection.  No siblings were necessary.</p>
-     <div class= "btn">{{#link-to 'richland'}}Experience Hannah&#8217s Richland{{/link-to}}</div>
-     <p>As a small child, it was shown that Hannah had much creativity in contrast to her athletic skills.  From the tender age of three when finger paint first squished between her nubbin fingers, works of genius spilled forth like an avalanche at a Swiss ski resort.</p>
-     <div class= "btn">Experience Her Creativity</div>
+      <h1>The Portrait Of An Artist As A Young Lady</h1>
+      <p>Hannah was born on the banks of the Columbia River in a tiny hamlet called Richland in the great state of Washington.  It is rumored that when Hannah was born, she was such an angelically beautiful child that her parents decided that they had achieved perfection.  No siblings were necessary.</p>
+      <div class= "btn">{{#link-to 'richland'}}Experience Hannah&#8217s Richland{{/link-to}}</div>
+      <p>As a small child, it was shown that Hannah had much creativity in contrast to her athletic skills.  From the tender age of three when finger paint first squished between her nubbin fingers, works of genius spilled forth like an avalanche at a Swiss ski resort.</p>
+      <div class= "btn">{{#link-to 'surprise'}}Experience Her Creativity{{/link-to}}</div>
     </div>
   </div>
 
@@ -76,12 +80,13 @@
     <div class="col-md-9">
       <h1>The Salad Days</h1>
       <p>After an idyllic childhood in the tiny hamlet of Richland, Hannah set forth to discover her fame and fortune as an artist.  As soon as she had collected her degree from the illustrious and exclusive Richland High School (home of the bombers), Hannah packed her bags and headed off to Brooklyn where she had been accepted at Pratt Institute.</p>
+
       <p>As you can see from the photo on the right, Hannah had matured into a vision of classic beauty, stopping traffic with her stunning beauty.</p>
     </div>
-    <div class="col-md-3">
-    <img src="img/Clubkid_300.jpg" alt="Hannah Nordgren" />
-    </div>
 
+    <div class="col-md-3">
+      <img src="img/Clubkid_300.jpg" alt="Hannah Nordgren" />
+    </div>
   </div>
 </script>
 
