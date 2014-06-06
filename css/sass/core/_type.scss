@@ -20,8 +20,20 @@ h6 {
   font-family: 'cocogoose', helvetica, arial, sans serif;
 }
 
+a{
+  color: $white;
+  text-decoration: none;
+  &:hover, &:visited {
+    color: $lt-gray;
+  }
+}
+
 .centered{
   text-align: center;
+}
+
+.bold{
+  font-weight: 900;
 }
 
 //color

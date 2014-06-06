@@ -66,9 +66,9 @@
     <div class="col-md-8 col-md-offset-1">
      <h1>The Portrait Of An Artist As A Young Lady</h1>
      <p>Hannah was born on the banks of the Columbia River in a tiny hamlet called Richland in the great state of Washington.  It is rumored that when Hannah was born, she was such an angelically beautiful child that her parents decided that they had achieved perfection.  No siblings were necessary.</p>
-     <div class= "btn button-primary">Experience Richland</div>
+     <div class= "btn">{{#link-to 'richland'}}Experience Hannah&#8217s Richland{{/link-to}}</div>
      <p>As a small child, it was shown that Hannah had much creativity in contrast to her athletic skills.  From the tender age of three when finger paint first squished between her nubbin fingers, works of genius spilled forth like an avalanche at a Swiss ski resort.</p>
-     <div class= "btn button-primary">Experience Her Creativity</div>
+     <div class= "btn">Experience Her Creativity</div>
     </div>
   </div>
 
@@ -83,6 +83,37 @@
     </div>
 
   </div>
+</script>
+
+<script type="text/x-handlebars" id="richland">
+  <div class="row">
+    <div class="col-md-12 centered">
+      <h1>Behold, Richland.</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="centered">Location, location, location</h3>
+        <img class="img-centered" src="img/richland.jpg" style="width: 500px;" alt="Hannah Nordgren" />
+        <p class="top-bump">Nestled far away from modern civilization, Richland Washington is part of a larger metropolitan area known as the Tri-Cities.  The area is best known in the state for both its nuclear trade as well as its agriculture.</p>
+
+        <p>As mentioned before, Hannah spent her formative years in Richland.  She had lived in two houses in town, first on Stevens Street and later on Putnam Street (where her parents still reside).  She attended public schools while living here in the area, and was an average student by all accounts.  In High School she accelerated her learning experience by taking courses simultaneously at the local community college.</p>
+
+        <p>In her teenage years, which coincided (conveniently) with the grunge era, she spent an absurd ammount of time frequenting local shows with her friends at locations such as The Hoedown (now defunct) and the local fairgrounds.  Largely considered a wide spot in the road between Portland and Seattle, many famous bands of the 90&#8217s have visited the area, including Fugazi, Green Day, Nirvana, and Sunny Day Real Estate.  She also particularly enjoyed local punk bands of the time.</p>
+
+        <p>Although the town boasts much to offer in the way of agriculture and microculture, many have noted over the years that Hannah did not particularly find living in the Tri-City area to be particularly pleasurable.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h3> Notable things of Hannah&#8217s Hometown</h3>
+        {{#each}}
+          <h4 class="top-bump">{{title}}</h4>
+          <p>{{paragraph}}</p>
+         <div class="btn"><a target="_blank" {{bind-attr href="url"}}>See More</a></div>
+        {{/each}}
+      </div>
+    </div>
+
+
 </script>
 
 <script type="text/x-handlebars" id="surprise">

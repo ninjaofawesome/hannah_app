@@ -1,0 +1,16 @@
+.btn {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: $gray;
+  border-radius: 0;
+  border: 2px solid $black;
+
+    &:hover{
+      background-color: $dk-gray;
+      color: $white;
+    }
+    &:visited{
+      background-color: $gray;
+      color: $lt-gray;
+    }
+}
